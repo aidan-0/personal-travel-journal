@@ -1,0 +1,109 @@
+* {
+    font-family: Poppins;
+}
+
+/* Nav area */
+.nav--area {
+    background-color: #F55A5A;
+    text-align: center;
+    scale: 1.2;
+    filter: drop-shadow(0 0 0.45rem gray);
+  }
+
+.nav--text,
+.nav--img {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+  }
+
+.nav--img {
+    scale: 0.5
+}
+
+
+
+/* Card */
+
+  
+.card--div {
+    min-width: 18rem;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 35px;
+    padding: 1rem;
+    display:grid;
+    align-items:center;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 15px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    transition: all .2s ease-in-out ;
+    box-shadow: 2px 2px 8px #b5b3b3;
+  }
+
+.card--div:hover {
+    background-color: white;
+    transform: scale(1.02);
+    box-shadow: 3px 3px 10px #b5b3b3;
+  }
+
+.location--img {
+
+    width: 18rem;
+    aspect-ratio: 5 / 3;
+    object-fit: cover;
+    border-radius: 0.3em;
+  }
+
+.country {
+    font-size: 1rem;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+  }
+
+.city {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+.date {
+    font-weight: 600;
+  }
+  
+.description {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+.card--pin {
+    width: .55rem;
+}
+
+.card--mapslink {
+    padding-left: 10px;
+    color:#b5b3b3;
+    text-decoration: underline;
+}
+
+
+  @media only screen and (max-width:900px) {
+    .card--div {
+      display: block;
+      text-align: center; 
+      margin-left: auto;
+      margin-right: auto;
+      padding: .5rem;
+    } 
+}  
+
+
+@media only screen and (max-width:400px) {
+    .card--div {
+      display: block;
+      text-align: center; 
+      padding: 0;
+      margin-top: 35px;
+      margin-left: 0px;
+    } 
+}  
